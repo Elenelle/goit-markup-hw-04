@@ -16,7 +16,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   background-color: var(--white-color);
-  color: var(--title-text-color);
+  color: var(--text-color);
   margin: 0px;
   padding: 0px;
 }
@@ -112,7 +112,6 @@ p {
 .contacts {
   display: flex;
   align-items: center;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -120,25 +119,35 @@ p {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  fill: var(--text-color);
 }
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.contacts-img {
+.contacts svg {
   margin-right: 10px;
 }
 /* Эффективные решения для вашего бизнеса */
 .main-section {
-  background-color: #2f303a;
-  opacity: 80%;
-  text-align: center;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .main-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -147,16 +156,18 @@ p {
   letter-spacing: 0.06em;
   color: var(--white-color);
   margin-bottom: 30px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 .main-button-link {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -175,16 +186,21 @@ p {
   margin-top: 94px;
   margin-bottom: 188px;
 }
-.advantages-item:not(:last-child) {
-  padding-right: 30px;
+.advantages-item {
+  width: calc((100% - 30px * 3) / 4);
 }
-.advantages-img {
-  display: flex;
-  align-items: center;
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+.item-icon {
   width: 270px;
   height: 120px;
-  padding: 25px 100px 25px 100px;
+  padding: 25px 100px;
   background-color: #f5f4fa;
+}
+.advantages-icon {
+  width: 70px;
+  height: 70px;
 }
 .advantages-title {
   font-family: Roboto;
