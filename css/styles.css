@@ -40,8 +40,6 @@ p {
 }
 .section {
   width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -53,8 +51,8 @@ p {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   color: var(--main-text-color);
+  margin-bottom: 50px;
 }
 /*top-menu*/
 .page-header {
@@ -99,7 +97,6 @@ p {
   margin-right: 50px;
 }
 .list-item {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -186,6 +183,10 @@ p {
   background-color: var(--accent-color);
 }
 /*advantages*/
+.advantages {
+  margin-top: 94px;
+  margin-bottom: 188px;
+}
 .hiden-title {
   display: none;
 }
@@ -230,6 +231,10 @@ p {
   margin-top: 10px;
 }
 /*directions*/
+.directions {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -274,12 +279,21 @@ p {
 .team-section-background {
   background: #f5f4fa;
 }
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .team-section {
   display: flex;
   width: 1170px;
   margin-top: 50px;
 }
 .team-item {
+  width: calc((100% - 30px * 3) / 4);
+  height: 422px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   background-color: var(--white-color);
@@ -288,14 +302,11 @@ p {
   margin-right: 30px;
 }
 .team-img {
-  display: flex;
   align-items: center;
   width: 270px;
   height: 260px;
 }
 .team-name {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -306,8 +317,6 @@ p {
   color: var(--main-text-color);
 }
 .team-position {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -319,12 +328,40 @@ p {
 }
 .networks-section {
   display: flex;
+  justify-content: center;
   margin: 16px 32px 24px 32px;
+  width: 206px;
+  height: 44px;
 }
 .networks-item:not(:last-child) {
   margin-right: 10px;
 }
+.team-link {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  content: '';
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+}
+.team-link:hover,
+.team-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.network-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
 /*clients*/
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .clients-section {
   display: flex;
   width: 1170px;
