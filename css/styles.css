@@ -40,10 +40,21 @@ p {
 }
 .section {
   width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--main-text-color);
 }
 /*top-menu*/
 .page-header {
@@ -146,7 +157,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -183,11 +193,10 @@ p {
   display: flex;
   width: 1170px;
   padding: 0;
-  margin-top: 94px;
-  margin-bottom: 188px;
 }
 .advantages-item {
   width: calc((100% - 30px * 3) / 4);
+  height: 251px;
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
@@ -203,8 +212,6 @@ p {
   height: 70px;
 }
 .advantages-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -215,23 +222,15 @@ p {
   margin-bottom: 10px;
 }
 .advantages-description {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-top: 10px;
 }
 /*directions*/
-.directions {
-  margin-top: 94px;
-}
 .section-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -244,14 +243,20 @@ p {
   display: flex;
   width: 1170px;
   margin-top: 50px;
-  margin-bottom: 188px;
+}
+.directions-item {
+  width: calc((100% - 30px * 2) / 3);
 }
 .directions-item:not(:last-child) {
   margin-right: 30px;
 }
+.directions-img {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+}
 .directions-section-subtitle {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -265,21 +270,14 @@ p {
   opacity: 80%;
   margin-top: -70px;
 }
-.directions-img {
-  display: flex;
-  align-items: center;
-  width: 370px;
-  height: 294px;
-}
 /*team*/
-.team {
-  margin-top: 94px;
+.team-section-background {
+  background: #f5f4fa;
 }
 .team-section {
   display: flex;
   width: 1170px;
   margin-top: 50px;
-  margin-bottom: 188px;
 }
 .team-item {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -327,9 +325,6 @@ p {
   margin-right: 10px;
 }
 /*clients*/
-.clients {
-  margin-top: 94px;
-}
 .clients-section {
   display: flex;
   width: 1170px;
