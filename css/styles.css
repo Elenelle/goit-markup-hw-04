@@ -235,15 +235,6 @@ p {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.section-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--main-text-color);
-}
 .directions-section {
   display: flex;
   width: 1170px;
@@ -282,10 +273,7 @@ p {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
-
 .team-section {
   display: flex;
   width: 1170px;
@@ -336,7 +324,7 @@ p {
 .networks-item:not(:last-child) {
   margin-right: 10px;
 }
-.team-link {
+.networks-link {
   text-decoration: none;
   display: inline-flex;
   justify-content: center;
@@ -346,8 +334,8 @@ p {
   height: 44px;
   color: #afb1b8;
 }
-.team-link:hover,
-.team-link:focus {
+.networks-section .networks-link:hover,
+.networks-section .networks-link:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
   color: var(--white-color);
