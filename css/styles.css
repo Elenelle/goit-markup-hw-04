@@ -430,7 +430,6 @@ p {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-  /* identical to box height */
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
@@ -495,16 +494,35 @@ p {
 }
 .join {
   display: flex;
+  justify-content: left;
+  width: 206px;
+  height: 44px;
 }
-.button {
+.join-item {
+  display: block;
+  content: '';
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 0px solid rgba(255, 255, 255, 0.1);
-  width: 44px; /* Ширина кнопки */
-  height: 44px; /* Высота */
-  border-radius: 30px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
 }
-.join-item:not(:last-child) {
-  padding-right: 10px;
+.join-link {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  content: '';
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--white-color);
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 .site-development {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
