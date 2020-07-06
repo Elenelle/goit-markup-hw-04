@@ -442,7 +442,6 @@ p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--white-color);
   margin-bottom: 9px;
@@ -456,7 +455,6 @@ p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -471,7 +469,6 @@ p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -539,8 +536,8 @@ p {
 }
 /*Портфолио*/
 .portfolio-page {
-  padding-top: 93px;
-  padding-bottom: 94px;
+  margin-top: 93px;
+  margin-bottom: 94px;
 }
 .filter {
   justify-content: center;
@@ -557,29 +554,32 @@ p {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  padding: 6px 22px 6px 22px;
-  background: #f5f4fa;
+  color: #212121;
+  padding: 6px 22px;
+  background: Solid #f5f4fa;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 .filter-link:hover,
 .filter-link:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 .cases {
-  margin-top: 34px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 34px;
 }
 .cases-item {
-  width: 370px;
-  height: 404px;
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--white-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  outline: 1px solid #eeeeee;
 }
 .cases-item:nth-child(3n) {
   margin-right: 0px;
@@ -587,28 +587,30 @@ p {
 .cases-item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
+.cases-item:hover,
+.cases-item:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .case-img {
   width: 370px;
   height: 294px;
+  align-items: center;
 }
 .case-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin: 20px 24px 4px 24px;
 }
 .case-item {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin: 4px 24px 20px 24px;
